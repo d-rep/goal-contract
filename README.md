@@ -3,6 +3,8 @@ The purpose of this web application is to give people motivation to meet their g
 
 Getting Up & Running
 
+This project requires NodeJS and NPM (I used v0.10.26 and 2.5.0, respectively).
+
 $ git clone git@bitbucket.org:drep/goal-contract.git
 $ npm install
 $ npm start
