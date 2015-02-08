@@ -1,0 +1,22 @@
+{
+  "name": "goal-contract",
+  "version": "0.0.1",
+  "authors": [
+    "Drew Repasky <drew.repasky@gmail.com>"
+  ],
+  "main": "app.js",
+  "license": "closed",
+  "homepage": "http://www.goalcontract.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "~1.3.12",
+    "bootstrap": "~3.3.2"
+  }
+}

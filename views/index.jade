@@ -1,5 +1,17 @@
 extends layout
 
 block content
-  h1= title
-  p Coming soon.
+  div.navbar.navbar-default.navbar-static-top
+    div.container
+      a.navbar-brand(href='#') Goal Contract
+      ul.nav.navbar-nav.navbar-right
+        li
+          a(href='#') Sample
+  div.container
+    h1= title
+    p Coming soon.
+    form
+      label(for='name') Name
+      input(type='text', id='name', data-ng-model='yourName', placeholder='Enter your name')
+    h2 Hello {{yourName}}!
+
