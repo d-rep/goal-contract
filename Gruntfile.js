@@ -16,7 +16,8 @@ module.exports = function(grunt) {
         options: {
           specs: 'test/*Spec.js',
           vendor: [
-            'bower_components/angularjs/angular.min.js'
+            'bower_components/angularjs/angular.min.js',
+            'bower_components/angular-route/angular-route.min.js'
           ],
           helpers: [
             'bower_components/angular-mocks/angular-mocks.js'

@@ -1,3 +1,3 @@
 (function(angular) {
-  angular.module('contractApp', ['contractApp.controllers']);
+  angular.module('contractApp', ['ngRoute', 'contractApp.controllers', 'contractApp.routes']);
 })(angular);
