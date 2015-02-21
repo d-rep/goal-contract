@@ -1,5 +1,5 @@
 describe('the contractApp angular app', function() {
-  var app, controller;
+  var app, routes, controller;
 
   beforeEach(function() {
     module('contractApp');
