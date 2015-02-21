@@ -5,7 +5,13 @@ Getting Up & Running
 
 This project requires NodeJS and NPM (I used v0.10.26 and 2.5.0, respectively).
 
-$ git clone git@bitbucket.org:drep/goal-contract.git
-$ npm install
-$ npm start
+    $ git clone git@bitbucket.org:drep/goal-contract.git
+    $ npm install
+    $ bower install
+    $ npm start
 
+Other things you probably need to run:
+
+    npm install -g bower
+    npm install -g grunt
+    npm install -g node-dev
