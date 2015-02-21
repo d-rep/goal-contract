@@ -7,11 +7,11 @@ block content
       ul.nav.navbar-nav.navbar-right
         li
           a(href='#') Sample
-  div.container
+  div.container(data-ng-controller='ContractController as cc')
     h1= title
     p Coming soon.
     form
       label(for='name') Name
-      input(type='text', id='name', data-ng-model='yourName', placeholder='Enter your name')
-    h2 Hello {{yourName}}!
+      input(type='text', id='name', data-ng-model='cc.yourName', placeholder='Enter your name')
+    h2 Hello {{cc.yourName}}!
 

@@ -4,14 +4,23 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     jshint: {
-      files: ['Gruntfile.js', 'app.js', 'routes/*.js']
+      files: ['Gruntfile.js', 
+        'app.js', 'routes/*.js', // Node/Express
+        'public/js/*.js', // Angular
+        'test/*Spec.js' // Tests
+        ]
     },
     jasmine: {
       customTemplate: {
-        src: 'js/**/*.js',
+        src: 'public/js/*.js',
         options: {
           specs: 'test/*Spec.js',
-          vendor: ['bower_components/angular/angular.min.js']
+          vendor: [
+            'bower_components/angularjs/angular.min.js'
+          ],
+          helpers: [
+            'bower_components/angular-mocks/angular-mocks.js'
+          ]
         }
       }
     },
