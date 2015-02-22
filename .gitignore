@@ -3,3 +3,4 @@ bower_components
 **/.DS_Store
 .grunt
 _SpecRunner.html
+bin/coverage

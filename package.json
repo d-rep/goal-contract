@@ -28,5 +28,8 @@
     "resolution"
   ],
   "author": "Drew Repasky (drew.repasky@gmail.com)",
-  "license": "close source / proprietary / copyright"
+  "license": "close source / proprietary / copyright",
+  "devDependencies": {
+    "grunt-template-jasmine-istanbul": "^0.3.3"
+  }
 }
