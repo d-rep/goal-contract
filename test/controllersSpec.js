@@ -16,7 +16,7 @@ describe('the contractApp angular app', function() {
     }));
 
     it('controller has name property', function() {
-      expect(controller.yourName).toEqual("Underwood");
+      expect(controller.contract.yourName).toEqual('Frank Underwood');
     });
   });
 

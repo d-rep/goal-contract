@@ -1,6 +1,6 @@
 {
   "name": "goal-contract",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Motivational webapp to help anyone meet their goals",
   "private": true,
   "scripts": {
