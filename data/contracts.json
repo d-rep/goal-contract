@@ -1,0 +1,74 @@
+[
+  {
+    "id": "darth",
+    "name": "Darth",
+    "goals": [
+      "Yearly performance review with Emperor Palpatine",
+      "Take TIE Fighter in for 60 million mile servicing",
+      "Hire contractor to fix fundamental flaw that can be exploited by a one-man starship",
+      "Get new asthma inhaler"
+    ],
+    "deadline": "",
+    "reward": "bubble bath",
+    "penalty": "force choke self"
+  },
+  {
+    "id": "frank",
+    "name": "Frank",
+    "goals": [
+      "Get the Watershed Act passed into law",
+      "Stop shoving people in front of the subway",
+      "Stop all the infidelity", 
+      "Become president"
+    ],
+    "deadline": "",
+    "reward": "Play some Call of Duty; paint some model figurines",
+    "penalty": "Impeachment"
+  },
+  {
+    "id": "walter",
+    "name": "Walter",
+    "goals": [
+      "Buy an RV",
+      "Perfect the cook",
+      "Find lawyer",
+      "Train heist",
+      "Get rid of competition",
+      "Build empire"
+    ],
+    "deadline": "",
+    "reward": "College fund for the kids",
+    "penalty": "Jail time"
+  },
+  {
+    "id": "monty",
+    "name": "Monty",
+    "goals": [
+      ""
+    ],
+    "deadline": "",
+    "reward": "",
+    "penalty": ""
+  },
+  {
+    "id": "drew",
+    "name": "Drew",
+    "goals": [
+      "Learn AngularJS",
+      "Deploy a functional Code Camp project"
+    ],
+    "deadline": "",
+    "reward": "Chipotle burrito",
+    "penalty": "Twerk it"
+  },
+  {
+    "id": "template",
+    "name": "",
+    "goals": [
+      ""
+    ],
+    "deadline": "",
+    "reward": "",
+    "penalty": ""
+  }
+]

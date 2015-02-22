@@ -6,6 +6,7 @@ module.exports = function(grunt) {
     jshint: {
       files: ['Gruntfile.js', 
         'app.js', 'routes/*.js', // Node/Express
+        'data/*.json', // Data
         'public/js/*.js', // Angular
         'test/*Spec.js' // Tests
         ]
