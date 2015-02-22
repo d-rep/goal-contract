@@ -5,10 +5,11 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     jshint: {
       files: ['Gruntfile.js', 
-        'app.js', 'routes/*.js', // Node/Express
-        'data/*.json', // Data
-        'public/js/*.js', // Angular
-        'test/*Spec.js' // Tests
+        'app.js', 'routes/*.js',  // Node/Express
+        'lib/*.js',               // Back-end services
+        'data/*.json',            // Data
+        'public/js/*.js',         // Front-end (Angular)
+        'test/*Spec.js'           // Front-end Jasmine Tests
         ]
     },
     jasmine: {
