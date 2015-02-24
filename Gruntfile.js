@@ -4,13 +4,14 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     jshint: {
-      files: ['Gruntfile.js', 
+      files: [
+        'Gruntfile.js', 
         'app.js', 'routes/*.js',  // Node/Express
         'lib/*.js',               // Back-end services
         'data/*.json',            // Data
-        'public/js/*.js',         // Front-end (Angular)
+        'public/js/*.js',         // Front-end (AngularJS)
         'test/*Spec.js'           // Front-end Jasmine Tests
-        ]
+      ]
     },
     jasmine: {
       customTemplate: {
@@ -19,7 +20,8 @@ module.exports = function(grunt) {
           specs: 'test/*Spec.js',
           vendor: [
             'bower_components/angularjs/angular.min.js',
-            'bower_components/angular-route/angular-route.min.js'
+            'bower_components/angular-route/angular-route.min.js',
+            'bower_components/angular-resource/angular-resource.min.js'
           ],
           helpers: [
             'bower_components/angular-mocks/angular-mocks.js'
@@ -33,7 +35,7 @@ module.exports = function(grunt) {
                   lines: 75,
                   statements: 75,
                   branches: 75,
-                  functions: 90
+                  functions: 80
               }
           }
         }

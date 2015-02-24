@@ -2,21 +2,23 @@
 
   var ContractController = function() {
     this.contract = {
-      yourName: 'Frank Underwood',
+      name: 'Enter your name',
       goals: [
-        'Get the Watershed Act passed into law',
-        'Stop shoving people in front of the subway',
-        'Stop all the infidelity', 
-        'Become president'
+        ''
         ],
-      deadline: '02/27/2015',
-      reward: 'Play some Call of Duty',
-      penalty: 'Impeachment'
+      deadline: '',
+      reward: '',
+      penalty: ''
 
     };
   };
 
+  var TestimonialsController = function(testimonialsService) {
+    this.testimonials = testimonialsService.query();
+  };
+
   angular.module('contractApp.controllers', [])
-    .controller('ContractController', ContractController);
+    .controller('ContractController', ContractController)
+    .controller('TestimonialsController', ['testimonialsService', TestimonialsController]);
     
 })(angular);

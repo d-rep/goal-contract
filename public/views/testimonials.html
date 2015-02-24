@@ -1,0 +1,10 @@
+<div>
+	<h1>Testimonials</h1>
+
+	<div data-ng-repeat="testimonial in tc.testimonials">
+		<span>{{testimonial.name}}</span>
+		<span>{{testimonial.profession}}</span>
+		<span><img data-ng-src="/images/{{testimonial.image}}"/></span>
+		<span>{{testimonial.quote}}</span>
+	</div>
+</div>

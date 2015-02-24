@@ -7,6 +7,10 @@
           templateUrl: 'views/contract.html',
           controller: 'ContractController as cc'
         })
+        .when('/testimonials', {
+          templateUrl: 'views/testimonials.html',
+          controller: 'TestimonialsController as tc'
+        })
         .otherwise({
           redirectTo: '/create'
         });
