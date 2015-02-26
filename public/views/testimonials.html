@@ -1,10 +1,19 @@
 <div>
-	<h1>Testimonials</h1>
+  <h1>Testimonials</h1>
+  <div data-ng-repeat="testimonial in tc.testimonials" class="row">
+    <div class="col-md-3">
+      <span><img data-ng-src="/images/{{testimonial.image}}" class="center-block"/></span>
+    </div>
+    <div class="col-md-8">
+      <blockquote>
+        <p>{{testimonial.quote}}</p>
+        <footer>{{testimonial.name}}, <br/><i>{{testimonial.profession}}</i></footer>
+      </blockquote>
+    </div>
+    <div class="col-md-1">
+      <i class="fa fa-quote-right fa-2x pull-left fa-border">&nbsp;</i>
+    </div>
 
-	<div data-ng-repeat="testimonial in tc.testimonials">
-		<span>{{testimonial.name}}</span>
-		<span>{{testimonial.profession}}</span>
-		<span><img data-ng-src="/images/{{testimonial.image}}"/></span>
-		<span>{{testimonial.quote}}</span>
-	</div>
+  </div>
+
 </div>

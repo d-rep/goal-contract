@@ -2,7 +2,7 @@
 	{
 		"name": "Darth",
 		"profession": "General, Galactic Empire",
-		"quote": "Since using GoalContracts.com, I've been reunited with my long lost son and built a military battlestation the size of a class-4 moon, armed with a planet-destroying superlaser.",
+		"quote": "Since using GoalContracts.com, I've been reunited with my long lost son, and also overseen the construction of a military battlestation the size of a class-4 moon, armed with a planet-destroying superlaser.",
 		"image": "darth.jpg",
 		"contractId": "darth"
 	},
@@ -23,14 +23,14 @@
 	{
 		"name": "Monty",
 		"profession": "Owner, Springfield Nuclear Power Plant",
-		"quote": "After finalizing my goals contract with this site, industrial accidents have decreased 0.25% while profits are up 600%.",
+		"quote": "After finalizing my goals contract with this site, industrial accidents have decreased 0.25% while profits are up 300%.",
 		"image": "monty.jpg",
 		"contractId": "monty"
 	},
 	{
 		"name": "Drew",
 		"profession": "Software Developer",
-		"quote": "I am coding more than ever since I've started using Goal Contracts.",
+		"quote": "I am coding more than ever since I've started using Goal Contracts. I've also found that I'm not flipping over as many tables when writing Javascript code.",
 		"image": "drew.jpg",
 		"contractId": "drew"
 	}

@@ -62,6 +62,12 @@ Deployment
 This application is deployed to [Heroku] and runs at http://www.goalcontract.com/
 
 
+Styles
+------
+
+This site uses a Twitter Bootstrap theme from http://bootswatch.com/flatly/
+
+
 [Drew Repasky]: https://www.linkedin.com/in/drewrepasky/
 [NodeJS]: http://nodejs.org/
 [Grunt]: http://gruntjs.com/
