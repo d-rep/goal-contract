@@ -18,6 +18,15 @@ describe('the contractApp angular app', function() {
     it('controller has name property', function() {
       expect(controller.contract.name).toEqual('Enter your name');
     });
+
+    it('ensure goals are added to contract', function() {
+      expect(controller.contract.goals).toEqual([]);
+      controller.newGoal = 'stop smoking';
+      controller.addGoal();
+      controller.newGoal = 'be nice';
+      controller.addGoal();
+      expect(controller.contract.goals).toEqual(['stop smoking', 'be nice']);
+    });
   });
 
   describe('the TestimonialsController angular module', function() {

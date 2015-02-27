@@ -3,13 +3,17 @@
   var ContractController = function() {
     this.contract = {
       name: 'Enter your name',
-      goals: [
-        ''
-        ],
+      goals: [],
       deadline: '',
       reward: '',
       penalty: ''
 
+    };
+
+    this.newGoal = '';
+    this.addGoal = function() {
+      this.contract.goals.push(this.newGoal);
+      this.newGoal = '';
     };
   };
 

@@ -1,18 +1,29 @@
 <div>
   <h1>Testimonials</h1>
-  <div data-ng-repeat="testimonial in tc.testimonials" class="row">
-    <div class="col-md-3">
-      <span><img data-ng-src="/images/{{testimonial.image}}" class="center-block"/></span>
+  
+  <div data-ng-repeat="testimonial in tc.testimonials">
+
+    <div class="row">
+      <div class="col-md-3">
+        <span><img data-ng-src="/images/{{testimonial.image}}" class="center-block"/></span>
+      </div>
+      <div class="col-md-8">
+        <blockquote>
+          <p>{{testimonial.quote}}</p>
+          <footer>{{testimonial.name}}, <br/><i>{{testimonial.profession}}</i></footer>
+        </blockquote>
+      </div>
+      <div class="col-md-1">
+        <i class="fa fa-arrow-right fa-3x"></i>
+      </div>
     </div>
-    <div class="col-md-8">
-      <blockquote>
-        <p>{{testimonial.quote}}</p>
-        <footer>{{testimonial.name}}, <br/><i>{{testimonial.profession}}</i></footer>
-      </blockquote>
+
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <button class="btn btn-default" class="center">My Goal Contract</button>
+      </div>
     </div>
-    <div class="col-md-1">
-      <i class="fa fa-quote-right fa-2x pull-left fa-border">&nbsp;</i>
-    </div>
+
 
   </div>
 

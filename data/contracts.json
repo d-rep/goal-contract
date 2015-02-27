@@ -55,7 +55,7 @@
     "name": "Drew",
     "goals": [
       "Learn AngularJS",
-      "Use TDD with Grunt and Jasmine"
+      "Use TDD with Grunt and Jasmine",
       "Deploy a functional Code Camp project"
     ],
     "deadline": "",
