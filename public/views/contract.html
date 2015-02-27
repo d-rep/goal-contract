@@ -12,14 +12,14 @@
         <li class="input-group">
           <input class="form-control" type="text" data-ng-value="goal" placeholder="A goal"></input>
           <div class="input-group-addon">
-            <i class="glyphicon glyphicon-trash"></i>
+            <i class="glyphicon glyphicon-trash" data-ng-click="cc.deleteGoal($index)"></i>
           </div>
         </li>
 
       </ul>
       <div>
         <input class="form-control" type="text" data-ng-model="cc.newGoal" placeholder="A goal"></input>
-        <button class="btn btn-primary" ng-click="cc.addGoal()"><i class="glyphicon glyphicon-plus"></i> Add Goal</button>
+        <button class="btn btn-primary" data-ng-click="cc.addGoal()"><i class="glyphicon glyphicon-plus"></i> Add Goal</button>
       </div>
     </div>
 

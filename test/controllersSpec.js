@@ -1,5 +1,5 @@
 describe('the contractApp angular app', function() {
-  var app, routes, controller, httpBackend;
+  var app, routes, controller, httpBackend, testimonialsService;
 
   beforeEach(function() {
     module('contractApp');
@@ -27,18 +27,28 @@ describe('the contractApp angular app', function() {
       controller.addGoal();
       expect(controller.contract.goals).toEqual(['stop smoking', 'be nice']);
     });
+
+    it('ensure we delete element properly', function() {
+      expect(controller.contract.goals).toEqual([]);
+      controller.contract.goals = ['a','b','c','d','e'];
+      controller.deleteGoal(3);
+      expect(controller.contract.goals).toEqual(['a','b','c','e']);
+      controller.deleteGoal(0);
+      expect(controller.contract.goals).toEqual(['b','c','e']);
+      controller.deleteGoal(2);
+      expect(controller.contract.goals).toEqual(['b','c']);
+    });
   });
 
   describe('the TestimonialsController angular module', function() {
-    beforeEach(inject(function($controller, $httpBackend) {
-      controller = $controller('TestimonialsController');
-      httpBackend = $httpBackend;
-    }));
+    beforeEach(inject(function($controller, $httpBackend, testimonialsService) {
+      $controller('TestimonialsController');
 
-    it('controller should make HTTP call to get data', function() {
+      expect(testimonialsService).toBeDefined();
+
       // TODO coming soon
       //httpBackend.expectGET('/testimonials').respond(200);
-    });
+    }));
   });
 
 });

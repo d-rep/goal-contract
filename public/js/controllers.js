@@ -10,11 +10,16 @@
 
     };
 
+    this.deleteGoal = function(index) {
+      this.contract.goals.splice(index,1);
+    };
+
     this.newGoal = '';
     this.addGoal = function() {
       this.contract.goals.push(this.newGoal);
       this.newGoal = '';
     };
+
   };
 
   var TestimonialsController = function(testimonialsService) {
