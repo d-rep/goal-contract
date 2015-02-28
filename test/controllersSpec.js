@@ -38,6 +38,7 @@ describe('the contractApp angular app', function() {
       controller.deleteGoal(2);
       expect(controller.contract.goals).toEqual(['b','c']);
     });
+
   });
 
   describe('the ViewContractController behavior', function() {
@@ -57,13 +58,24 @@ describe('the contractApp angular app', function() {
   });
 
   describe('the TestimonialsController angular module', function() {
-    it('Controller is defined', function() {
+    it('Controller is defined and behaves as expected', function() {
       inject(function($controller) {
 
           var testimonialsController = $controller('TestimonialsController');
 
           expect(testimonialsController).toBeDefined();
 
+          testimonialsController.testimonials = ['a','b','c'];
+          expect(testimonialsController.active).toEqual(0);
+          
+          testimonialsController.nextTestimonial();
+          expect(testimonialsController.active).toEqual(1);
+
+          testimonialsController.nextTestimonial();
+          expect(testimonialsController.active).toEqual(2);
+
+          testimonialsController.nextTestimonial();
+          expect(testimonialsController.active).toEqual(0);
       });
     });
   });

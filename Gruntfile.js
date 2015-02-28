@@ -27,10 +27,12 @@ module.exports = function(grunt) {
           'angular.min.js': '/angularjs/angular.min.js',
           'angular-route.min.js': '/angular-route/angular-route.min.js',
           'angular-resource.min.js': '/angular-resource/angular-resource.min.js',
+          'angular-animate.min.js': '/angular-animate/angular-animate.min.js',
           // not directly referenced in app, but still required
           'angular.min.js.map': '/angularjs/angular.min.js.map',
           'angular-route.min.js.map': '/angular-route/angular-route.min.js.map',
           'angular-resource.min.js.map': '/angular-resource/angular-resource.min.js.map',
+          'angular-animate.min.js.map': '/angular-animate/angular-animate.min.js.map',
           // font-awesome dependency on fonts being in a certain location is not awesome
           '../fonts/fontawesome-webfont.woff': '/font-awesome/fonts/fontawesome-webfont.woff',
           '../fonts/fontawesome-webfont.woff2': '/font-awesome/fonts/fontawesome-webfont.woff2',
@@ -50,7 +52,8 @@ module.exports = function(grunt) {
           vendor: [
             'bower_components/angularjs/angular.min.js',
             'bower_components/angular-route/angular-route.min.js',
-            'bower_components/angular-resource/angular-resource.min.js'
+            'bower_components/angular-resource/angular-resource.min.js',
+            'bower_components/angular-animate/angular-animate.min.js'
           ],
           helpers: [
             'bower_components/angular-mocks/angular-mocks.js'

@@ -3,7 +3,8 @@
     'ngRoute', 'ngResource', 
     'contractApp.services', 
     'contractApp.controllers', 
-    'contractApp.routes'
+    'contractApp.routes',
+    'ngAnimate'
   ]);
 
 })(angular);

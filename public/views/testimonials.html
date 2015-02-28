@@ -1,8 +1,6 @@
-<div>
-  <h1>Testimonials</h1>
-  
-  <div data-ng-repeat="testimonial in tc.testimonials">
+<div data-ng-repeat="testimonial in tc.testimonials">
 
+  <div data-ng-show="$index == tc.active" class="animate-show">
     <div class="row">
       <div class="col-md-3">
         <span><img data-ng-src="/images/{{testimonial.image}}" class="center-block"/></span>
@@ -10,11 +8,13 @@
       <div class="col-md-8">
         <blockquote>
           <p>{{testimonial.quote}}</p>
-          <footer>{{testimonial.name}}, <br/><i>{{testimonial.profession}}</i></footer>
+          <footer>{{testimonial.name}}<br/>
+            <i>{{testimonial.profession}}</i>
+          </footer>
         </blockquote>
       </div>
       <div class="col-md-1">
-        <i class="fa fa-arrow-right fa-3x"></i>
+        <i class="fa fa-arrow-right fa-3x" data-ng-click="tc.nextTestimonial()"></i>
       </div>
     </div>
 
@@ -23,7 +23,6 @@
         <button class="btn btn-default" class="center" data-ng-click="tc.viewContract(testimonial.contractId)">My Goal Contract</button>
       </div>
     </div>
-
 
   </div>
 

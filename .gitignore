@@ -6,3 +6,4 @@ public/fonts
 .grunt
 _SpecRunner.html
 bin/coverage
+npm-debug.log

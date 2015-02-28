@@ -2,21 +2,21 @@
 	{
 		"name": "Darth",
 		"profession": "General, Galactic Empire",
-		"quote": "Since using GoalContracts.com, I've been reunited with my long lost son, and also overseen the construction of a military battlestation the size of a class-4 moon, armed with a planet-destroying superlaser.",
+		"quote": "Since using GoalContract.com, I've been reunited with my long lost son, and also overseen the construction of a military battlestation the size of a class-4 moon, armed with a planet-destroying superlaser.",
 		"image": "darth.jpg",
 		"contractId": "darth"
 	},
 	{
 		"name": "Frank",
 		"profession": "Democratic Majority Whip, U.S. House of Representatives",
-		"quote": "My power & authority are at an all time high and the mysterious fatalities of people I know have decreased slightly. Thank you, GoalContracts.com!",
+		"quote": "My power & authority are at an all time high and the mysterious fatalities of people I know have decreased slightly. Thank you, GoalContract.com!",
 		"image": "frank.jpg",
 		"contractId": "frank"
 	},
 	{
 		"name": "Walter",
 		"profession": "Entrepreneur & former Chemistry teacher",
-		"quote": "My legitimate car wash business has never been more profitable thanks to GoalContracts.com.",
+		"quote": "My legitimate car wash business has never been more profitable thanks to GoalContract.com.",
 		"image": "walter.jpg",
 		"contractId": "walter"
 	},
@@ -30,7 +30,7 @@
 	{
 		"name": "Drew",
 		"profession": "Software Developer",
-		"quote": "I am coding more than ever since I've started using Goal Contracts. I've also found that I'm not flipping over as many tables when writing Javascript code.",
+		"quote": "I am coding more than ever since I've started creating a Goal Contract. I've also found that I'm not flipping over as many tables when writing Javascript code.",
 		"image": "drew.jpg",
 		"contractId": "drew"
 	}
