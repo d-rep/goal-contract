@@ -23,7 +23,8 @@
     "jasmine": "^2.2.1",
     "lodash": "^3.3.1",
     "morgan": "~1.5.1",
-    "serve-favicon": "~2.2.0"
+    "serve-favicon": "~2.2.0",
+    "grunt-template-jasmine-istanbul": "^0.3.3"
   },
   "keywords": [
     "goals",
@@ -31,8 +32,5 @@
     "resolution"
   ],
   "author": "Drew Repasky (drew.repasky@gmail.com)",
-  "license": "close source / proprietary / copyright",
-  "devDependencies": {
-    "grunt-template-jasmine-istanbul": "^0.3.3"
-  }
+  "license": "close source / proprietary / copyright"
 }
