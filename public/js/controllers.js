@@ -1,8 +1,8 @@
 (function(angular) {
 
-  var ContractController = function() {
+  var CreateContractController = function() {
     this.contract = {
-      name: 'Enter your name',
+      name: '',
       goals: [],
       deadline: '',
       reward: '',
@@ -15,19 +15,40 @@
     };
 
     this.newGoal = '';
+
     this.addGoal = function() {
       this.contract.goals.push(this.newGoal);
       this.newGoal = '';
     };
 
+    this.submitted = false;
+
+    this.save = function() {
+      this.submitted = true;
+    };
+
+    this.sign = function() {
+      this.submitted = true;
+    };
+
   };
 
-  var TestimonialsController = function(testimonialsService) {
+  var ViewContractController = function($routeParams, contractService) {
+    var contractId = $routeParams.contractId;
+    this.contract = contractService.get({'contractId': contractId});
+  };
+
+  var TestimonialsController = function($location, testimonialsService) {
     this.testimonials = testimonialsService.query();
+
+    this.viewContract = function(contractId) {
+      $location.path('view/' + contractId);
+    };
   };
 
-  angular.module('contractApp.controllers', [])
-    .controller('ContractController', ContractController)
-    .controller('TestimonialsController', ['testimonialsService', TestimonialsController]);
+  angular.module('contractApp.controllers', ['ngRoute'])
+    .controller('CreateContractController', ['contractService', CreateContractController])
+    .controller('ViewContractController', ['$routeParams', 'contractService', ViewContractController])
+    .controller('TestimonialsController', ['$location', 'testimonialsService', TestimonialsController]);
     
 })(angular);

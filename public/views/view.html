@@ -1,0 +1,22 @@
+<div>
+  <h2>Goals</h2>
+  <ol>
+    <li data-ng-repeat="goal in ctrl.contract.goals">{{goal}}</li>
+  </ol>
+  <div>
+    <h2>Deadline</h2>
+    {{ctrl.contract.deadline | date: 'medium'}}
+  </div>
+  <div>
+    <h2>Reward for meeting goals</h2>
+    {{ctrl.contract.reward}}
+  </div>
+  <div>
+    <h2>Penalty</h2>
+    {{ctrl.contract.penalty}}
+  </div>
+  <div>
+    <h3>Signed,</h3>
+    {{ctrl.contract.name}}
+  </div>
+</div>

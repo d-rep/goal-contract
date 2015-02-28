@@ -9,14 +9,14 @@ describe('the contractApp angular app', function() {
     expect(true).toEqual(true);
   });
 
-  describe('the ContractController angular module', function() {
+  describe('the CreateContractController angular module', function() {
 
     beforeEach(inject(function($controller) {
-      controller = $controller('ContractController');
+      controller = $controller('CreateContractController');
     }));
 
     it('controller has name property', function() {
-      expect(controller.contract.name).toEqual('Enter your name');
+      expect(controller.contract.name).toEqual('');
     });
 
     it('ensure goals are added to contract', function() {
@@ -40,15 +40,32 @@ describe('the contractApp angular app', function() {
     });
   });
 
+  describe('the ViewContractController behavior', function() {
+
+    it('Controller is defined', function() {
+      inject(function($controller) {
+
+          var viewContractController = $controller('ViewContractController', {
+            $routeParams: {'contractId': 'walter'}
+          });
+
+          expect(viewContractController).toBeDefined();
+
+      });
+    });
+
+  });
+
   describe('the TestimonialsController angular module', function() {
-    beforeEach(inject(function($controller, $httpBackend, testimonialsService) {
-      $controller('TestimonialsController');
+    it('Controller is defined', function() {
+      inject(function($controller) {
 
-      expect(testimonialsService).toBeDefined();
+          var testimonialsController = $controller('TestimonialsController');
 
-      // TODO coming soon
-      //httpBackend.expectGET('/testimonials').respond(200);
-    }));
+          expect(testimonialsController).toBeDefined();
+
+      });
+    });
   });
 
 });

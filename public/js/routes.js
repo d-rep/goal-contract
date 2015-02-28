@@ -5,7 +5,11 @@
       $routeProvider.
         when('/create', {
           templateUrl: 'views/contract.html',
-          controller: 'ContractController as cc'
+          controller: 'CreateContractController as cc'
+        })
+        .when('/view/:contractId', {
+          templateUrl: 'views/view.html',
+          controller: 'ViewContractController as ctrl'
         })
         .when('/testimonials', {
           templateUrl: 'views/testimonials.html',

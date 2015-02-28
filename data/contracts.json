@@ -8,7 +8,7 @@
       "Hire contractor to fix fundamental flaw that can be exploited by a one-man starship",
       "Get new asthma inhaler"
     ],
-    "deadline": "",
+    "deadline": "2100-03-01T00:00:00.000Z",
     "reward": "bubble bath",
     "penalty": "force choke self"
   },
@@ -17,13 +17,14 @@
     "name": "Frank",
     "goals": [
       "Get the Watershed Act passed into law",
-      "Stop shoving people in front of the subway",
+      "Enact swift vengeance on all those who've ever wronged me",
       "Stop all the infidelity", 
-      "Become president"
+      "Stop shoving people in front of the subway",
+      "Become leader of the free world"
     ],
-    "deadline": "",
-    "reward": "Play some Call of Duty; paint some model figurines",
-    "penalty": "Impeachment"
+    "deadline": "2014-07-01T00:00:00.000Z",
+    "reward": "Paint model figurines, play some Call of Duty",
+    "penalty": "Impeachment; Netflix cancellation"
   },
   {
     "id": "walter",
@@ -36,7 +37,7 @@
       "Get rid of competition",
       "Build empire"
     ],
-    "deadline": "",
+    "deadline": "2014-06-01T00:00:00.000Z",
     "reward": "College fund for the kids",
     "penalty": "Jail time"
   },
@@ -44,11 +45,12 @@
     "id": "monty",
     "name": "Monty",
     "goals": [
-      ""
+      "Hide nuclear waste",
+      "Pay off safety inspectors"
     ],
-    "deadline": "",
+    "deadline": "2014-05-01T00:00:00.000Z",
     "reward": "buy another island",
-    "penalty": ""
+    "penalty": "spend time with employees"
   },
   {
     "id": "drew",
@@ -58,7 +60,7 @@
       "Use TDD with Grunt and Jasmine",
       "Deploy a functional Code Camp project"
     ],
-    "deadline": "",
+    "deadline": "2014-03-03T00:00:00.000Z",
     "reward": "Chipotle burrito",
     "penalty": "Twerk it"
   },
