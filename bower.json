@@ -5,7 +5,7 @@
     "Drew Repasky <drew.repasky@gmail.com>"
   ],
   "main": "app.js",
-  "license": "closed",
+  "license": "Apache",
   "homepage": "http://www.goalcontract.com",
   "private": true,
   "ignore": [

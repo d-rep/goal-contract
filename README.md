@@ -8,9 +8,8 @@ The purpose of this web application is to give people motivation to meet their g
 
 License
 -------
-Currently closed-source / proprietary and should not be distributed without the author's consent.
 
-Copyright &copy; 2015-, [Drew Repasky]. 
+Copyright &copy; 2015-, [Drew Repasky].  Licensed under [Apache License, Version 2.0].
 
 
 Getting Up & Running
@@ -68,7 +67,15 @@ Styles
 This site uses a Twitter Bootstrap theme from http://bootswatch.com/flatly/
 
 
+Todo List
+---------
+
+- [ ] Database backend + persist Goal Contract
+
+
+
 [Drew Repasky]: https://www.linkedin.com/in/drewrepasky/
+[Apache License, Version 2.0]: http://www.apache.org/licenses/LICENSE-2.0.html
 [NodeJS]: http://nodejs.org/
 [Grunt]: http://gruntjs.com/
 [Bower]: http://bower.io/ 
