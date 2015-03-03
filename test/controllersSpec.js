@@ -1,25 +1,25 @@
-describe('the contractApp angular app', function() {
+describe('The contractApp angular module', function() {
   var app, routes, controller, httpBackend, testimonialsService;
 
   beforeEach(function() {
     module('contractApp');
   });
 
-  it('truthy', function() {
+  it('Ensure we know what truthy means', function() {
     expect(true).toEqual(true);
   });
 
-  describe('the CreateContractController angular module', function() {
+  describe('The CreateContractController angular module', function() {
 
     beforeEach(inject(function($controller) {
       controller = $controller('CreateContractController');
     }));
 
-    it('controller has name property', function() {
+    it('Controller has a contract and it has a name property that is blank by default', function() {
       expect(controller.contract.name).toEqual('');
     });
 
-    it('ensure goals are added to contract', function() {
+    it('Ensure goals are added to contract', function() {
       expect(controller.contract.goals).toEqual([]);
       controller.newGoal = 'stop smoking';
       controller.addGoal();
@@ -28,7 +28,7 @@ describe('the contractApp angular app', function() {
       expect(controller.contract.goals).toEqual(['stop smoking', 'be nice']);
     });
 
-    it('ensure we delete element properly', function() {
+    it('Ensure we remove a goal properly', function() {
       expect(controller.contract.goals).toEqual([]);
       controller.contract.goals = ['a','b','c','d','e'];
       controller.deleteGoal(3);
@@ -39,9 +39,21 @@ describe('the contractApp angular app', function() {
       expect(controller.contract.goals).toEqual(['b','c']);
     });
 
+    it('Ensure we save properly', function() {
+      expect(controller.submitted).toEqual(false);
+      controller.save();
+      expect(controller.submitted).toEqual(true);
+    });
+
+    it('Ensure we sign it properly', function() {
+      expect(controller.submitted).toEqual(false);
+      controller.sign();
+      expect(controller.submitted).toEqual(true);
+    }); 
+
   });
 
-  describe('the ViewContractController behavior', function() {
+  describe('The ViewContractController behavior', function() {
 
     it('Controller is defined', function() {
       inject(function($controller) {
@@ -57,26 +69,32 @@ describe('the contractApp angular app', function() {
 
   });
 
-  describe('the TestimonialsController angular module', function() {
-    it('Controller is defined and behaves as expected', function() {
-      inject(function($controller) {
+  describe('The TestimonialsController angular module', function() {
+    beforeEach(inject(function($controller) {
+      controller = $controller('TestimonialsController');
+      expect(controller).toBeDefined();
+    }));
 
-          var testimonialsController = $controller('TestimonialsController');
+    it('Clicking through all testimonials will wrap around to the beginning', function() {
 
-          expect(testimonialsController).toBeDefined();
+        controller.testimonials = ['a','b','c'];
+        expect(controller.active).toEqual(0);
+        
+        controller.nextTestimonial();
+        expect(controller.active).toEqual(1);
 
-          testimonialsController.testimonials = ['a','b','c'];
-          expect(testimonialsController.active).toEqual(0);
-          
-          testimonialsController.nextTestimonial();
-          expect(testimonialsController.active).toEqual(1);
+        controller.nextTestimonial();
+        expect(controller.active).toEqual(2);
 
-          testimonialsController.nextTestimonial();
-          expect(testimonialsController.active).toEqual(2);
+        controller.nextTestimonial();
+        expect(controller.active).toEqual(0);
 
-          testimonialsController.nextTestimonial();
-          expect(testimonialsController.active).toEqual(0);
-      });
+
+    });
+
+    it('Can view a contract from testimonials', function() {
+        controller.viewContract('blah');
+        // TODO assert something
     });
   });
 

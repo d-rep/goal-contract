@@ -1,7 +1,7 @@
-describe('our custom angular routing', function() {
+describe('Angular routes', function() {
 
   // not exactly asserting behavior; just checking raw string values
-  it('routing is configured properly', function() {
+  it('Routing is configured properly', function() {
     module('contractApp.routes');
 
     inject(function($route) {
@@ -12,8 +12,8 @@ describe('our custom angular routing', function() {
 
   });
 
-  // this is a better way
-  it('browser location should drive routes properly', function() {
+  // This is a better way
+  it('The browser location should drive routes properly', function() {
     module('contractApp.routes');
 
     inject(function($route, $location, $rootScope, $httpBackend) {

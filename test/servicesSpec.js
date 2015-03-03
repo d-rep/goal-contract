@@ -1,6 +1,6 @@
-describe('angular services/factories', function() {
+describe('Angular services/factories', function() {
 
-  it('should build a service which uses REST endpoint to get Contract data', function() {
+  it('Should build a contractService which uses REST endpoint to get Contract data', function() {
     module('contractApp.services');
 
     inject(function($resource, $httpBackend, contractService) {
@@ -21,7 +21,7 @@ describe('angular services/factories', function() {
     });
   });
 
-  it('should build a TestimonialsService that uses ngResource to get data', function() {
+  it('Should build testimonialsService that uses ngResource to get data', function() {
     module('contractApp.services');
 
     inject(function($resource, $httpBackend, testimonialsService) {

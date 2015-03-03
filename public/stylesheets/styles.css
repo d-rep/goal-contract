@@ -1,19 +1,8 @@
-.animate-show {
-  line-height: 20px;
-  opacity: 1;
-  padding: 10px;
-  border: 0px solid black;
-  background: white;
+/*
+.contract-form input.ng-invalid.ng-touched {
+  border: 1px solid #FA787E;
 }
 
-.animate-show.ng-hide-add.ng-hide-add-active,
-.animate-show.ng-hide-remove.ng-hide-remove-active {
-  -webkit-transition: all linear 0.5s;
-  transition: all linear 0.5s;
+.contract-form input.ng-valid.ng-touched {
 }
-
-.animate-show.ng-hide {
-  line-height: 0;
-  opacity: 0;
-  padding: 0 10px;
-}
+*/

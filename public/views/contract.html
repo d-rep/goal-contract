@@ -1,9 +1,9 @@
 <div>
-  <form>
+  <form novalidate class="contract-form">
 
     <div class="form-group">
       <label for="yourName">Your Name:</label>
-      <input type="text" class="form-control" id="yourName" data-ng-model="cc.contract.name" placeholder="The undersigned"/>
+      <input type="text" class="form-control" id="yourName" data-ng-model="cc.contract.name" placeholder="The undersigned" required />
     </div>
 
     <div class="form-group">
@@ -41,7 +41,7 @@
         <div class="input-group-addon">
           <i class="glyphicon glyphicon-gift"></i>
         </div>
-        <input type="text" class="form-control" id="reward" data-ng-model="cc.contract.reward" placeholder="Reward"/>
+        <input type="text" class="form-control" id="reward" data-ng-model="cc.contract.reward" placeholder="Reward" required />
       </div>
     </div>
 
@@ -51,7 +51,7 @@
         <div class="input-group-addon">
           <i class="glyphicon glyphicon-thumbs-down"></i>
         </div>
-        <input type="text" class="form-control" id="penalty" data-ng-model="cc.contract.penalty" placeholder="Penalty"/>
+        <input type="text" class="form-control" id="penalty" data-ng-model="cc.contract.penalty" placeholder="Penalty" required />
       </div>
     </div>
 
@@ -65,10 +65,10 @@
 
   <footer class="well">
     <p>
-      The fine print: 
-      once you press the Sign It button, you may not ever change this contract.
+      Save and Sign are not yet implemented.
     </p>
     <p>
+      Please note:
       In no way does this consitute a real actual contract.
       No one is under any obligation to actually carry out penalties or award anything, especially the developer of this website.
     </p>

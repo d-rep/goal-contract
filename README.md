@@ -36,7 +36,7 @@ Start the project:
 
     npm start
 
-Then you can simply open a browser to http://localhost:3000/finePrint
+Then you can simply open a browser to http://localhost:3000
 
 
 

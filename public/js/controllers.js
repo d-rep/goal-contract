@@ -7,7 +7,6 @@
       deadline: '',
       reward: '',
       penalty: ''
-
     };
 
     this.deleteGoal = function(index) {
@@ -53,7 +52,7 @@
     var vm = this;
     $interval(function() {
       vm.nextTestimonial();
-    }, 4000);
+    }, 5000);
 
     this.viewContract = function(contractId) {
       $location.path('view/' + contractId);
