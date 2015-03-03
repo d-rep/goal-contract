@@ -38,7 +38,6 @@
   };
 
   var TestimonialsController = function($location, $interval, testimonialsService) {
-
     this.testimonials = testimonialsService.query();
     this.active = 0;
 

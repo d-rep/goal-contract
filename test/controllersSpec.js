@@ -1,5 +1,5 @@
 describe('The contractApp angular module', function() {
-  var app, routes, controller, httpBackend, testimonialsService;
+  var controller;
 
   beforeEach(function() {
     module('contractApp');
@@ -58,11 +58,11 @@ describe('The contractApp angular module', function() {
     it('Controller is defined', function() {
       inject(function($controller) {
 
-          var viewContractController = $controller('ViewContractController', {
-            $routeParams: {'contractId': 'walter'}
-          });
+        var viewContractController = $controller('ViewContractController', {
+          $routeParams: {'contractId': 'walter'}
+        });
 
-          expect(viewContractController).toBeDefined();
+        expect(viewContractController).toBeDefined();
 
       });
     });
@@ -70,9 +70,15 @@ describe('The contractApp angular module', function() {
   });
 
   describe('The TestimonialsController angular module', function() {
-    beforeEach(inject(function($controller) {
-      controller = $controller('TestimonialsController');
+    var location;
+
+    beforeEach(inject(function($controller, $route, $rootScope, $httpBackend, $location) {
+
+      controller = $controller('TestimonialsController', $location);
       expect(controller).toBeDefined();
+      
+      location = $location;
+
     }));
 
     it('Clicking through all testimonials will wrap around to the beginning', function() {
@@ -89,12 +95,12 @@ describe('The contractApp angular module', function() {
         controller.nextTestimonial();
         expect(controller.active).toEqual(0);
 
-
     });
 
     it('Can view a contract from testimonials', function() {
-        controller.viewContract('blah');
-        // TODO assert something
+      spyOn(location, 'path');
+      controller.viewContract('frank');
+      expect(location.path).toHaveBeenCalledWith('view/frank');
     });
   });
 
