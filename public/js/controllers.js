@@ -49,12 +49,16 @@
     };
 
     var vm = this;
-    $interval(function() {
+    var testimonialsInterval = $interval(function() {
       vm.nextTestimonial();
     }, 5000);
 
     this.viewContract = function(contractId) {
       $location.path('view/' + contractId);
+    };
+
+    this.cancelScrollBar = function() {
+      $interval.cancel(testimonialsInterval);
     };
   };
 
