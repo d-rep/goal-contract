@@ -27,7 +27,7 @@ Then run the following to install Grunt, which is a task-runner that is used her
 
 Get the code and install any dependencies:
 
-    git clone git@bitbucket.org:drep/goal-contract.git
+    git clone git@github.com:d-rep/goal-contract.git
     npm install
     bower install
 
